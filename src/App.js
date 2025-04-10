@@ -15,7 +15,11 @@ import React from 'react'
 // import EVENT_HANDLER from './EVENT_HANDLER/EveHand';
 // import EventBinding from './EVENT_BINDING/EventBinding';
 // import HooksUseState from './Hooks_UseState/HooksUseState';
-import EventBubbling from './Event_Bubbling/EventBubbling';
+// import EventBubbling from './Event_Bubbling/EventBubbling';
+// import FORM from './components/FORM/FORM'
+// import Child from './components/STATE_LIFTING/Child'
+import Home from './components/STATE_LIFTING/Home';
+
 
 
 
@@ -29,6 +33,11 @@ function App(){
   //       <Card key={index} titleText ={item.title} descText ={item.desc}/>
 
   // ));
+
+  // const data = 'This is from parent component';
+  // const ChildHandler = (childdata) =>{
+  //   console.log('App: '+childdata);
+  // }
 
     return <>
 
@@ -46,7 +55,13 @@ function App(){
 
     {/* <HooksUseState /> */}
 
-    <EventBubbling />
+    {/* <EventBubbling /> */}
+
+    {/* <FORM /> */}
+
+    
+
+    {/* <Child data={data} childdata = {ChildHandler}/> */}
 
     
 
@@ -59,6 +74,9 @@ function App(){
     <ReactBootstrap name = "John Cena"/>
     <FaYoutube className = 'icons' />
      */}
+
+     <Home />
+    
 
 
 

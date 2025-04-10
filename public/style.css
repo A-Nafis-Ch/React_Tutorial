@@ -46,20 +46,21 @@
 }
 button{
 
-    height: 70px;
+    /* height: 70px;
     width: 70px;
-    margin: 0 2px;
+    margin: 0 2px; */
     background-color: rgb(25, 155, 25);
     border-style: none;
     border-radius: 5px;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
+    padding: 5px;
     cursor: pointer;
         
 }
 h1{
 
-    color: white;
+    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     padding-top: 25%;
@@ -67,17 +68,20 @@ h1{
 
 p{
 
-    color: white;
+    color: black
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     padding-top: 25%;
 }
 body{
 
-    background-color: rgb(36, 33, 33);
+    /* background-color: rgb(36, 33, 33); */
     
 }
 .ParentDiv{
 
     background-color: chocolate;
+}
+h3{
+    color: black;
 }
