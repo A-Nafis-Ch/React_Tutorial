@@ -18,7 +18,8 @@ import React from 'react'
 // import EventBubbling from './Event_Bubbling/EventBubbling';
 // import FORM from './components/FORM/FORM'
 // import Child from './components/STATE_LIFTING/Child'
-import Home from './components/STATE_LIFTING/Home';
+// import Home from './components/STATE_LIFTING/Home';
+import Form from './components/Formik/Form'
 
 
 
@@ -75,8 +76,13 @@ function App(){
     <FaYoutube className = 'icons' />
      */}
 
-     <Home />
-    
+     {/* <Home /> */}
+
+     <Form />
+
+
+     
+  
 
 
 

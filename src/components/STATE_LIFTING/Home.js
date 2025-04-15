@@ -12,7 +12,7 @@ const Home = () => {
   const [todos, setTodos] = useState(todoArray);
 
   const handleNewTodo = (newTodo) => {
-    setTodos(...todos, newTodo);
+    setTodos([...todos, newTodo]);
   }
 
 
@@ -22,7 +22,7 @@ const Home = () => {
     <div>
       <h1>This is home component</h1>
 
-      <Todos todolist = {todoArray}/>
+      <Todos todolist = {todos}/>
       <Todo />
       <NewTodo onTodo={handleNewTodo}/>
     </div>

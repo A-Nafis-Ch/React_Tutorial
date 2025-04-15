@@ -9,9 +9,9 @@ const Todos = (props) => {
 
     <div>
       <h1>This is Todos component</h1>
-      {props.todolist.map((todo, index) => {
+      {props.todolist.map((todo, index) => (
         <Todo key={index} todo={todo} />
-      })}
+      ))}
 
     </div>
   );
