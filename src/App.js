@@ -19,7 +19,8 @@ import React from 'react'
 // import FORM from './components/FORM/FORM'
 // import Child from './components/STATE_LIFTING/Child'
 // import Home from './components/STATE_LIFTING/Home';
-import Form from './components/Formik/Form'
+// import Form from './components/Formik/Form'
+import UseEffect from './components/UseEffect/UseEffect';
 
 
 
@@ -78,7 +79,9 @@ function App(){
 
      {/* <Home /> */}
 
-     <Form />
+     {/* <Form /> */}
+
+     <UseEffect name='UseEffect'/>
 
 
      

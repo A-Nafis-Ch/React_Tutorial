@@ -22,25 +22,31 @@ const Form = () => {
           password: ''
         }}
 
+        onSubmit={(values, actions) => {
+          
+          console.log('User: ' , values);
+          actions.resetForm();
+        }}
+
       >
 
-        {(values, handleChange, handleSubmit) => {
+        {({values, handleChange, handleSubmit}) => (
 
           <form onSubmit={handleSubmit}>
             <label htmlFor='name'>Name:</label>
             <input type='text' id='name' placeholder='Enter your name'
-              onChange={handleChange} value={values.name}></input> <br></br>
+              onChange={handleChange} value={values.name}></input> <br />
 
             <label htmlFor='email'>Email:</label>
-            <input type='text' id='email' placeholder='Enter your email' onChange={handleChange} value={values.name}></input><br></br>
+            <input type='text' id='email' placeholder='Enter your email' onChange={handleChange} value={values.email}></input><br />
 
             <label htmlFor='password'>Password:</label>
-            <input type='password' id='password' placeholder='Enter your password' onChange={handleChange} value={values.name}></input><br></br>
+            <input type='password' id='password' placeholder='Enter your password' onChange={handleChange} value={values.password}></input><br />
 
             <button type='submit'>Submit</button>
           </form>
 
-        }}
+        )}
 
 
 

@@ -46,9 +46,9 @@
 }
 button{
 
-    /* height: 70px;
-    width: 70px;
-    margin: 0 2px; */
+    height: 40px;
+    width: 40px;
+    margin: 0 2px;
     background-color: rgb(25, 155, 25);
     border-style: none;
     border-radius: 5px;
@@ -56,6 +56,8 @@ button{
     font-size: 1rem;
     padding: 5px;
     cursor: pointer;
+    
+    
         
 }
 h1{
