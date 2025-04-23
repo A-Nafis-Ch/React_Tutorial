@@ -1,4 +1,6 @@
 import React from 'react'
+
+import UseRefComponent from './components/UseRef/UseRefComponent';
 // import STATE from './STATE'
 // import Card from './components/Card'
 // import Data from './Data.json'
@@ -20,7 +22,9 @@ import React from 'react'
 // import Child from './components/STATE_LIFTING/Child'
 // import Home from './components/STATE_LIFTING/Home';
 // import Form from './components/Formik/Form'
-import UseEffect from './components/UseEffect/UseEffect';
+// import UseEffect from './components/UseEffect/UseEffect';
+
+
 
 
 
@@ -81,7 +85,11 @@ function App(){
 
      {/* <Form /> */}
 
-     <UseEffect name='UseEffect'/>
+     {/* <UseEffect name='UseEffect' color='blue'/> */}
+
+     <UseRefComponent />
+
+     
 
 
      
