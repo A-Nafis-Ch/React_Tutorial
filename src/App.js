@@ -1,6 +1,14 @@
 import React from 'react'
 
-import UseRefComponent from './components/UseRef/UseRefComponent';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import Main from './components/Routing/Main'
+import Navbar from './components/Routing/Navbar'
+import Home from './components/Routing/Home'
+import About from './components/Routing/About'
+import Contact from './components/Routing/Contact'
+import Login from './components/Routing/Login'
+// import Todo from './components/Todo/Todo'
+// import UseRefComponent from './components/UseRef/UseRefComponent';
 // import STATE from './STATE'
 // import Card from './components/Card'
 // import Data from './Data.json'
@@ -45,6 +53,25 @@ function App(){
   //   console.log('App: '+childdata);
   // }
 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />
+    },
+    {
+      path: "/about",
+      element: <About/>
+    },
+    {
+      path: "/contact",
+      element: <Contact />
+    },
+    {
+      path: "/login",
+      element: <Login/>
+    },
+  ])
+
     return <>
 
     <h1 className="headingStyle">Todo App</h1>
@@ -87,7 +114,12 @@ function App(){
 
      {/* <UseEffect name='UseEffect' color='blue'/> */}
 
-     <UseRefComponent />
+     {/* <UseRefComponent /> */}
+
+     {/* <Todo /> */}
+     <Navbar/>
+     <RouterProvider router={router} />
+     <Main />
 
      
 
